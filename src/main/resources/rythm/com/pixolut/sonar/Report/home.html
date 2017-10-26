@@ -1,0 +1,23 @@
+@extends(_base)
+@args String host, String projectKey, String loginToken
+<h1>Sonar Issue Exporter</h1>
+
+<form action="/report/xlsx">
+  <div class="control-group">
+    <label>SonarQube Host</label>
+    <input name="host" value="@host">
+  </div>
+  <div class="control-group">
+    <label>Login token</label>
+    <input name="loginToken" value="@loginToken">
+  </div>
+  <div class="control-group">
+    <label>Project key</label>
+    <input name="projectKey" value="@projectKey">
+  </div>
+  <div class="control-group">
+    <button>Download</button>
+  </div>
+</form>
+
+

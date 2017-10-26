@@ -1,0 +1,31 @@
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    padding-top: 20px;
+    background: #222;
+    color: #ddd;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14pt;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form .control-group {
+    margin-top: 20px;
+}
+
+form input {
+    width: 400px;
+}
+
+form input, form button {
+    padding: 5px 5px;
+    font-size: 13pt;
+}
