@@ -2,9 +2,11 @@ package com.pixolut.sonar;
 
 import act.data.annotation.Data;
 import act.util.SimpleBean;
+import org.osgl.util.S;
 
 import java.util.List;
 
+@SuppressWarnings("unused")
 @Data
 public class Issue implements SimpleBean {
     public String key;
@@ -14,6 +16,10 @@ public class Issue implements SimpleBean {
     public int line;
     public String message;
     public String type;
+
+    public String getSource() {
+        return S.concat(S.afterLast(component, ":"), ":", line);
+    }
 
     @Data
     public static class Resp implements SimpleBean {
